@@ -4,23 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>jona design</title>
+    <link rel="stylesheet" href="styles/bundle.css" />
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script>
+      $.get("navbar.html", function (data) {
+        $("#navbar-placeholder").replaceWith(data);
+      });
+    </script>
   </head>
 
   <body>
-    <h1 class="heading">
-      <a href="index.html" class="">jona design</a>
-    </h1>
-    <div class="navbar">
-      <a href="#" class="underline home">Home</a>
-      <a href="#" class="underline">Men</a>
-      <a href="#" class="underline">Women</a>
-      <a href="#" class="underline">Shoes</a>
-      <a href="#" class="underline">Accessories</a>
-    </div>
-    <div class="content">
-      <div class="text">Lorem ipsum dolor sit amet.</div>
+    <div id="navbar-placeholder"></div>
+    <div class="content home-content">
+      <div class="text">Lorem, ipsum dolor.</div>
       <img src="content/shirt.png" alt="shirt" />
     </div>
   </body>

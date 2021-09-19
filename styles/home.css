@@ -43,24 +43,23 @@ a {
 }
 
 .content {
-  background-color: lightgray;
-  height: 75vh;
+  background-color: #f3f3f3;
+  padding: 5vw;
+}
+
+.home-content {
+  height: 55vh;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .home {
   font-weight: bold;
 }
 
-.content div,
-.content img {
-  /* margin: 0 20vw; */
-}
-
 .content .text {
-  font-size: 4rem;
+  font-size: 6rem;
   max-width: 10vw;
 }
 
