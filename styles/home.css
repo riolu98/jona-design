@@ -81,3 +81,10 @@ a.underline::after {
 a.underline:hover::after {
   transform: scaleX(1);
 }
+
+.navbar-logo {
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
